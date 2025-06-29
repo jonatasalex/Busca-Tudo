@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca Tudo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static/estilo.css') }}">
+</head>
+<body>
+    <body>
+    <h1>Lista de Produtos</h1>
+    <ul>
+        {% for produto in produtos %}
+            <li>{{ produto.nome }} - {{ produto.preco }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</body>
+</html>
