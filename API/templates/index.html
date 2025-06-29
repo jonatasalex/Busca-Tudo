@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busca Tudo</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='static/estilo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
 </head>
+
 <body>
-    <body>
-    <h1>Lista de Produtos</h1>
-    <ul>
+    <h1 id="titulo1">Busca Tudo</h1>
+    <div id="abaPesquisa">
+        <input type="text" id="campo-pesquisa" placeholder="Pesquisar...">
+        <button onclick="pesquisar()">Pesquisar</button>
+    </div>
+
+    <div id="caixaProduto">
         {% for produto in produtos %}
-            <li>{{ produto.nome }} - {{ produto.preco }}</li>
+            <div class="produto">
+                <strong>{{ produto.nome }}</strong><br>
+                <span>{{ produto.preco }}</span>
+            </div>
         {% endfor %}
-    </ul>
+    </div>
 </body>
 </body>
+
 </html>

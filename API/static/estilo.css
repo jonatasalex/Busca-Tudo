@@ -1,3 +1,76 @@
-body{
+body {
     background-color: rebeccapurple;
+    text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+#abaPesquisa {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+#campo-pesquisa {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+#abaPesquisa button {
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#abaPesquisa button:hover {
+    background-color: #0056b3;
+}
+
+
+#caixaProduto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+
+.produto {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.2s ease;
+    color: #333;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    background-color: #eef6ff;
+    cursor: pointer;
+}
+
+.produto strong {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.produto span {
+    font-size: 16px;
+    color: #777;
 }
