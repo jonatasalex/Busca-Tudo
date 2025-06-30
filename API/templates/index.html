@@ -17,10 +17,13 @@
 
     <div id="caixaProduto">
         {% for produto in produtos %}
-            <div class="produto">
-                <strong>{{ produto.nome }}</strong><br>
-                <span>{{ produto.preco }}</span>
-            </div>
+            <a href="{{ produto.link_do_produto }}" class="link-produto">
+                <div class="produto">
+                    <!-- <img src="{{ produto.imagem_url }}" alt="Imagem de {{ produto.nome }}"> -->
+                    <strong>{{ produto.nome }}</strong><br>
+                    <span>{{ produto.preco }}</span>
+                </div>
+            </a>
         {% endfor %}
     </div>
 </body>
